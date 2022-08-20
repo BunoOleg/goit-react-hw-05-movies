@@ -11,7 +11,7 @@ const Reviews = () => {
 		const getReviews = async () => {
 			try {
 				const response = await fetchMoviesReviews(Number(movieId));
-				console.log(response);
+				// console.log(response);
 				setReviews(response);
 			} catch (error) {
 				console.log(error.message);

@@ -24,13 +24,13 @@ const MoviesSearch = () => {
 		});
 	};
 
-	console.log(searchParams);
+	// console.log(searchParams);
 	const currentQuery = searchParams.get('query');
-	console.log(currentQuery);
+	// console.log(currentQuery);
 
 	useEffect(() => {
 		if (!currentQuery) {
-			console.log('nety');
+			// console.log('nety');
 		}
 	}, [currentQuery]);
 
@@ -39,7 +39,7 @@ const MoviesSearch = () => {
 			const getMovieBySearch = async () => {
 				try {
 					const response = await fetchMoviesBySearch(searchQuery);
-					console.log(response);
+					// console.log(response);
 					setMovies(response);
 				} catch (error) {
 					setError(error.message);
@@ -51,7 +51,7 @@ const MoviesSearch = () => {
 			const getMovieBySearch = async () => {
 				try {
 					const response = await fetchMoviesBySearch(currentQuery);
-					console.log(response);
+					// console.log(response);
 					setMovies(response);
 				} catch (error) {
 					setError(error.message);

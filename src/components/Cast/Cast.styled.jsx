@@ -17,7 +17,6 @@ export const ItemCost = styled.li`
 	padding: 5px;
 	color: var(--font-color);
 	background: #fbf9fa3f;
-	/* font-size: 16px; */
 	border-radius: 5px;
 
 	& img {

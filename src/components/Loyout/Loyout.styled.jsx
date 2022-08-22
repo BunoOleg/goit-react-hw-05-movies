@@ -18,7 +18,6 @@ export const NavLinkStyled = styled(NavLink)`
 `;
 
 export const AppContainer = styled.div`
-	/* height: 100vh; */
 	min-height: 100vh;
 	font-size: 40px;
 	color: var(--font-color);
